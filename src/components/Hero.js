@@ -7,9 +7,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carous
 
 const Hero = () => {
   const carouselImages = [
-    '/images/caro1.jpg',
-    '/images/caro2.jpg',
-    '/images/caro3.jpg',
+    'https://w0.peakpx.com/wallpaper/462/884/HD-wallpaper-juice-fresh-fruits-water-fruits-juicy-splash-thumbnail.jpg',
+    'https://wallpapers.com/images/featured/drink-uio74i0rowuwdowi.jpg',
+    'https://c4.wallpaperflare.com/wallpaper/291/911/799/food-cocktail-drink-fruit-glass-hd-wallpaper-preview.jpg',
   ];
 
   return (
