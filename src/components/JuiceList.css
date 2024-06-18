@@ -1,0 +1,13 @@
+.juice-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .juice-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  

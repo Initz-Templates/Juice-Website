@@ -1,0 +1,38 @@
+import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+
+const Header = () => {
+  return (
+    <AppBar position="static" sx={{ backgroundColor: '#3f51b5' }}>
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Link component={RouterLink} to="/" color="inherit" underline="none" sx={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <img src="data:image/png;base64,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" alt="Juice Shop Logo" style={{ width: '40px', height: 'auto' }} /> {/* Replace with your logo image */}
+            {/* Juice Paradise */}
+          </Link>
+        </Typography>
+        <Box component="nav" sx={{ display: 'flex', gap: '1rem' }}>
+          <Link component={RouterLink} to="/" color="inherit" underline="none">
+            Home
+          </Link>
+          <Link component={RouterLink} to="/aboutus" color="inherit" underline="none">
+            About Us
+          </Link>
+          <Link component={RouterLink} to="/featured-products" color="inherit" underline="none">
+            Featured
+          </Link>
+          <Link component={RouterLink} to="/contact" color="inherit" underline="none">
+            Contact
+          </Link>
+        </Box>
+      </Toolbar>
+    </AppBar>
+  );
+};
+
+export default Header;
